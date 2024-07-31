@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Success</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <header>
+        <div class="header-left">
+          <svg class="arrow-back" width="12px" height="24px">
+            <use href="./svg/sprite.svg#arrow-back"></use>
+          </svg>
+          <span>4</span>
+        </div>
+        <div>
+          <div class="title">
+            <h1>T-Space</h1>
+            <svg class="check-icon" width="16px" height="16px">
+              <use href="./svg/sprite.svg#check"></use>
+            </svg>
+          </div>
+          <p>бот</p>
+        </div>
+        <div class="t-space-logo">
+          <svg class="t-space-logo-icon" width="22px" height="19px">
+            <use href="./svg/sprite.svg#t-space-logo"></use>
+          </svg>
+        </div>
+      </header>
+      <main>
+        <div class="messages">
+          <div class="message bot">
+            Дякую! Наш менеджер обов'язково зв'яжеться з вами найближчим часом!
+          </div>
+        </div>
+      </main>
+      <footer>
+        <svg class="clip-icon" width="30px" height="30px">
+          <use href="./svg/sprite.svg#clip"></use>
+        </svg>
+        <div class="input-container">
+          <p>Повідомлення</p>
+          <svg class="sticker-icon" width="20px" height="20px">
+            <use href="./svg/sprite.svg#sticker"></use>
+          </svg>
+        </div>
+        <svg class="micro-icon" width="30px" height="30px">
+          <use href="./svg/sprite.svg#micro"></use>
+        </svg>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const formData = JSON.parse(localStorage.getItem("formData"));
+        if (formData) {
+          console.log(`Full name: ${formData.name} ${formData.surname}`);
+          console.log(`Email: ${formData.email}`);
+          console.log(`Phone number: ${formData.number}`);
+        }
+      });
+    </script>
+  </body>
+</html>
