@@ -3,6 +3,19 @@
   margin: 0;
   padding: 0;
   user-select: none;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #0038ff;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #d9e4ff;
+  }
 }
 
 body {
@@ -236,8 +249,8 @@ form label {
 
 form input {
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 10px;
+  background-color: #d9e4ff;
 }
 
 form button {
